@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/bg.jpg);
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header2{
+    min-height: 50vh;
+	width:100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/bg.jpg);
+	background-position: 1;
+	background-size: cover;
+	position: relative;
+    margin-bottom: -100px;
+}
+
+.text-box2 h1{
+    font-weight: 500;
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+    font-size: 40px;
+}
+nav{
+    display: flex;
+    padding: 0 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+.navi {
+    margin-top: -1.3rem;
+	flex: 1;
+	text-align: right;
+
+}
+.navi ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+
+}
+.navi ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.navi ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #0b078b ;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.navi ul li:hover::after {
+	width: 100%;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	background: #162052;
+	border-radius: 45rem;
+}
+.hero-btn:hover {
+	background: #0c1f80;
+	transition: 1s;
+}
+
+.user-account img {
+    transform: translateY(15px);
+}
+
+.number[type=number]::-webkit-inner-spin-button, 
+.number[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.mapss{
+    margin-top: 50px;
+}
+.info
+{
+    grid-area: info;
+}
+
+.contactUs {
+    margin: 100px;
+}
+.contact {
+    border-radius: 1rem;
+    padding: 40px;
+    background: rgb(3, 13, 94);
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+.box 
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3
+{
+    color: #fffffff7;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+
+
+/* form  */
+.formBox
+{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50
+{
+    display: flex;
+    gap: 20px;
+}
+.inputBox
+{
+    display: grid;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.formBox .row100 .inputBox
+{
+    width: 100%;
+}
+.inputBox span
+{
+    color: #cacaf0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: .25rem;
+}
+.inputBox textarea
+{
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+    border-radius: .25rem;
+}
+.inputBox input[type="submit"]
+{
+    background: #150fc9;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder
+{
+    color: #999;
+}
+
+/* info */
+.info
+{
+    background: #050857;
+}
+.info .infoBox div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span
+{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p
+{
+    color: #fff;
+    font-size: 1.1em;
+}
+.info .infoBox div a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci
+{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li 
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a 
+{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+.sci li a:hover {
+    color: #fff;
+}
+.mapss iframe {
+    border-radius: .25rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 991px)
+{
+    body
+    {
+        background: #03a9f5;
+    }
+    .contactUs
+    {
+        padding: 20px;
+    }
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: none
+        "form"
+        "info"
+        "map";
+    }
+    .map
+    {
+        min-height: 300px;
+    }
+    .formBox .row50
+    {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox
+    {
+        width: 100px;
+    }
+    .contact
+    {
+        padding: 30px;
+    }
+    .map
+    {
+        min-height: 300px;
+        padding: 30px;
+    }
+}

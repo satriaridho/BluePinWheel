@@ -1,0 +1,11 @@
+.header2 a{
+    float: right;
+    margin: 30px;
+    color: white;
+    margin-right: 200px;
+    word-spacing: 5px;
+}
+.clear{
+    float: none;
+    clear: both;
+}
